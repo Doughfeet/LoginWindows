@@ -51,6 +51,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.RegisterLabel11 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LabelEmailError = new System.Windows.Forms.Label();
+            this.LabelPasswordError = new System.Windows.Forms.Label();
+            this.LabelFilloutInformation = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -126,46 +129,52 @@
             // 
             this.FirstnameTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.FirstnameTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstnameTextBox1.Location = new System.Drawing.Point(1003, 179);
+            this.FirstnameTextBox1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.FirstnameTextBox1.Location = new System.Drawing.Point(949, 179);
             this.FirstnameTextBox1.Name = "FirstnameTextBox1";
-            this.FirstnameTextBox1.Size = new System.Drawing.Size(453, 42);
-            this.FirstnameTextBox1.TabIndex = 2;
+            this.FirstnameTextBox1.Size = new System.Drawing.Size(419, 42);
+            this.FirstnameTextBox1.TabIndex = 1;
             // 
             // LastnameTextBox2
             // 
             this.LastnameTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LastnameTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastnameTextBox2.Location = new System.Drawing.Point(1003, 267);
+            this.LastnameTextBox2.ForeColor = System.Drawing.Color.DarkOrange;
+            this.LastnameTextBox2.Location = new System.Drawing.Point(949, 267);
             this.LastnameTextBox2.Name = "LastnameTextBox2";
-            this.LastnameTextBox2.Size = new System.Drawing.Size(453, 42);
+            this.LastnameTextBox2.Size = new System.Drawing.Size(419, 42);
             this.LastnameTextBox2.TabIndex = 2;
             // 
             // EmailTextBox3
             // 
             this.EmailTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmailTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTextBox3.Location = new System.Drawing.Point(1003, 355);
+            this.EmailTextBox3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.EmailTextBox3.Location = new System.Drawing.Point(949, 355);
             this.EmailTextBox3.Name = "EmailTextBox3";
-            this.EmailTextBox3.Size = new System.Drawing.Size(453, 42);
-            this.EmailTextBox3.TabIndex = 2;
+            this.EmailTextBox3.Size = new System.Drawing.Size(419, 42);
+            this.EmailTextBox3.TabIndex = 3;
+            this.EmailTextBox3.TextChanged += new System.EventHandler(this.EmailTextBox3_TextChanged);
             // 
             // CountryTextBox4
             // 
             this.CountryTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CountryTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CountryTextBox4.Location = new System.Drawing.Point(1003, 443);
+            this.CountryTextBox4.ForeColor = System.Drawing.Color.DarkOrange;
+            this.CountryTextBox4.Location = new System.Drawing.Point(949, 443);
             this.CountryTextBox4.Name = "CountryTextBox4";
-            this.CountryTextBox4.Size = new System.Drawing.Size(453, 42);
-            this.CountryTextBox4.TabIndex = 2;
+            this.CountryTextBox4.Size = new System.Drawing.Size(419, 42);
+            this.CountryTextBox4.TabIndex = 4;
             // 
             // CityTextBox5
             // 
             this.CityTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CityTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CityTextBox5.Location = new System.Drawing.Point(1003, 531);
+            this.CityTextBox5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.CityTextBox5.Location = new System.Drawing.Point(949, 531);
             this.CityTextBox5.Name = "CityTextBox5";
-            this.CityTextBox5.Size = new System.Drawing.Size(453, 42);
-            this.CityTextBox5.TabIndex = 2;
+            this.CityTextBox5.Size = new System.Drawing.Size(419, 42);
+            this.CityTextBox5.TabIndex = 5;
             // 
             // label6
             // 
@@ -223,6 +232,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label9
             // 
@@ -239,19 +249,23 @@
             // 
             this.PasswordTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PasswordTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTextBox6.Location = new System.Drawing.Point(1003, 619);
+            this.PasswordTextBox6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.PasswordTextBox6.Location = new System.Drawing.Point(949, 619);
             this.PasswordTextBox6.Name = "PasswordTextBox6";
-            this.PasswordTextBox6.Size = new System.Drawing.Size(453, 42);
-            this.PasswordTextBox6.TabIndex = 2;
+            this.PasswordTextBox6.Size = new System.Drawing.Size(419, 42);
+            this.PasswordTextBox6.TabIndex = 6;
+            this.PasswordTextBox6.TextChanged += new System.EventHandler(this.PasswordTextBox6_TextChanged);
             // 
             // VerifyTextBox7
             // 
             this.VerifyTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.VerifyTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerifyTextBox7.Location = new System.Drawing.Point(1003, 707);
+            this.VerifyTextBox7.ForeColor = System.Drawing.Color.DarkOrange;
+            this.VerifyTextBox7.Location = new System.Drawing.Point(949, 707);
             this.VerifyTextBox7.Name = "VerifyTextBox7";
-            this.VerifyTextBox7.Size = new System.Drawing.Size(453, 42);
-            this.VerifyTextBox7.TabIndex = 2;
+            this.VerifyTextBox7.Size = new System.Drawing.Size(419, 42);
+            this.VerifyTextBox7.TabIndex = 7;
+            this.VerifyTextBox7.TextChanged += new System.EventHandler(this.VerifyTextBox7_TextChanged);
             // 
             // label10
             // 
@@ -287,11 +301,50 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // LabelEmailError
+            // 
+            this.LabelEmailError.AutoSize = true;
+            this.LabelEmailError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelEmailError.ForeColor = System.Drawing.Color.Red;
+            this.LabelEmailError.Location = new System.Drawing.Point(945, 400);
+            this.LabelEmailError.Name = "LabelEmailError";
+            this.LabelEmailError.Size = new System.Drawing.Size(70, 24);
+            this.LabelEmailError.TabIndex = 13;
+            this.LabelEmailError.Text = "label11";
+            this.LabelEmailError.Visible = false;
+            // 
+            // LabelPasswordError
+            // 
+            this.LabelPasswordError.AutoSize = true;
+            this.LabelPasswordError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPasswordError.ForeColor = System.Drawing.Color.Red;
+            this.LabelPasswordError.Location = new System.Drawing.Point(945, 664);
+            this.LabelPasswordError.Name = "LabelPasswordError";
+            this.LabelPasswordError.Size = new System.Drawing.Size(70, 24);
+            this.LabelPasswordError.TabIndex = 13;
+            this.LabelPasswordError.Text = "label11";
+            this.LabelPasswordError.Visible = false;
+            // 
+            // LabelFilloutInformation
+            // 
+            this.LabelFilloutInformation.AutoSize = true;
+            this.LabelFilloutInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelFilloutInformation.ForeColor = System.Drawing.Color.Red;
+            this.LabelFilloutInformation.Location = new System.Drawing.Point(945, 818);
+            this.LabelFilloutInformation.Name = "LabelFilloutInformation";
+            this.LabelFilloutInformation.Size = new System.Drawing.Size(70, 24);
+            this.LabelFilloutInformation.TabIndex = 13;
+            this.LabelFilloutInformation.Text = "label11";
+            this.LabelFilloutInformation.Visible = false;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1520, 881);
+            this.Controls.Add(this.LabelFilloutInformation);
+            this.Controls.Add(this.LabelPasswordError);
+            this.Controls.Add(this.LabelEmailError);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label8);
@@ -351,5 +404,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label RegisterLabel11;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label LabelEmailError;
+        private System.Windows.Forms.Label LabelPasswordError;
+        private System.Windows.Forms.Label LabelFilloutInformation;
     }
 }

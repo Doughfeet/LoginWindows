@@ -14,7 +14,7 @@ namespace WindowsLogin
 {
     public partial class Register : Form
     {
-        DataTable dt = new DataTable();
+
         public Register()
         {
             InitializeComponent();
@@ -62,7 +62,8 @@ namespace WindowsLogin
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("The email address is in use!");
+                        LabelEmailError.Visible = true;
+                        LabelEmailError.Text = "The email address is in use!";
                     }
 
                 }
@@ -77,7 +78,8 @@ namespace WindowsLogin
         {
             if (this.Controls.OfType<TextBox>().Any(t => string.IsNullOrEmpty(t.Text)))
             {
-                MessageBox.Show("Fill out all information..");
+                LabelFilloutInformation.Visible = true;
+                LabelFilloutInformation.Text = "Fill out all information..";
                 return false;
             }
             return true;
@@ -98,28 +100,34 @@ namespace WindowsLogin
 
             if (check == false)
             {
-                MessageBox.Show("There are something wrong with your email address..");
+                LabelEmailError.Visible = true;
+                LabelEmailError.Text = "Failure.. ex. JohnDoe@Unknown.com";
                 return false;
-
             }
             else
                 return true;
         }
         private bool PasswordNotNull(TextBox textBox)
         {
-            return textBox.Text != null;
+            if (textBox.Text.Length < 8)
+            {
+                LabelPasswordError.Visible = true;
+                LabelPasswordError.Text = "Password must be longer that 8 characters long";
+                return false;
+            }
+            else
+                return true;
         }
         private bool CheckPasswordVerify(TextBox password, TextBoxBase verify)
         {
             if (password.Text != verify.Text)
             {
-                MessageBox.Show("The password and verify password does not match!");
-                verify.ForeColor = Color.Red;
+                LabelPasswordError.Visible = true;
+                LabelPasswordError.Text = "The password and verify password does not match!";
                 return false;
             }
             else
             {
-                verify.ForeColor = Color.Black;
                 return true;
             }
 
@@ -135,6 +143,25 @@ namespace WindowsLogin
         private void RegisterLabel11_Click(object sender, EventArgs e)
         {
             StoringRegistrationToDatabase();
+        }
+        private void EmailTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            LabelEmailError.Visible = false;
+        }
+        private void PasswordTextBox6_TextChanged(object sender, EventArgs e)
+        {
+            LabelPasswordError.Visible = false;
+        }
+        private void VerifyTextBox7_TextChanged(object sender, EventArgs e)
+        {
+            LabelPasswordError.Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

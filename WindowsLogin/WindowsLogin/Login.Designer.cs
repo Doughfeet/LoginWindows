@@ -85,6 +85,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.DarkOrange;
             this.textBox1.Location = new System.Drawing.Point(516, 253);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(457, 37);
@@ -94,6 +95,7 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.DarkOrange;
             this.textBox2.Location = new System.Drawing.Point(516, 368);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(457, 37);
@@ -185,6 +187,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Login
             // 
