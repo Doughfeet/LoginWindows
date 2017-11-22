@@ -1,6 +1,6 @@
 ﻿namespace WindowsLogin
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.RegisterLabel7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -104,7 +104,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(800, 462);
+            this.label4.Location = new System.Drawing.Point(792, 455);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 29);
             this.label4.TabIndex = 0;
@@ -123,9 +123,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(891, 451);
+            this.pictureBox2.Location = new System.Drawing.Point(881, 433);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 51);
+            this.pictureBox2.Size = new System.Drawing.Size(92, 69);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -165,15 +165,16 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Corporation";
             // 
-            // label7
+            // RegisterLabel7
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label7.Location = new System.Drawing.Point(667, 570);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 25);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "register here";
+            this.RegisterLabel7.AutoSize = true;
+            this.RegisterLabel7.ForeColor = System.Drawing.Color.DarkOrange;
+            this.RegisterLabel7.Location = new System.Drawing.Point(667, 570);
+            this.RegisterLabel7.Name = "RegisterLabel7";
+            this.RegisterLabel7.Size = new System.Drawing.Size(133, 25);
+            this.RegisterLabel7.TabIndex = 6;
+            this.RegisterLabel7.Text = "register here";
+            this.RegisterLabel7.Click += new System.EventHandler(this.RegisterLabel7_Click);
             // 
             // pictureBox4
             // 
@@ -185,13 +186,13 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 620);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.RegisterLabel7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
@@ -205,7 +206,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.DarkOrange;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The way to go, HomePractice";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -230,7 +231,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label RegisterLabel7;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

@@ -26,11 +26,11 @@ namespace WindowsLogin.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\LoginData.mdf" +
-            ";Integrated Security=True;Connect Timeout=30")]
-        public string LoginDataConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\WLoginDatabas" +
+            "e1.mdf;Integrated Security=True")]
+        public string WLoginDatabase1ConnectionString {
             get {
-                return ((string)(this["LoginDataConnectionString"]));
+                return ((string)(this["WLoginDatabase1ConnectionString"]));
             }
         }
     }
