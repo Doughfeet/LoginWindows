@@ -13,6 +13,8 @@ namespace WindowsLogin
 {
     public partial class Login : Form
     {
+        public static string UsernameEMail { get; set; }
+        public static string Password { get; set; }
         public Login()
         {
             InitializeComponent();
@@ -31,16 +33,16 @@ namespace WindowsLogin
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            bool contains = false;
-            string Email = null;
-            string Password = null;
+            UsernameEMail = UsernameTextBox1.Text.Trim();
+            Password = PasswordTextBox2.Text;
+
             string connectString = null;
             string sql = null;
 
             connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kenne\Source\Repos\LoginWindows\WindowsLogin\WindowsLogin\WLoginDatabase1.mdf;Integrated Security=True";
             sql = @"SELECT COUNT(*) FROM LoginTable
                     WHERE
-                        Email = '"+ UsernameTextBox1.Text.Trim() +"' AND Password = '"+ PasswordTextBox2.Text +"'";
+                        Email = '"+ UsernameEMail + "' AND Password = '"+ Password + "'";
 
             DataTable DT = new DataTable();
 
@@ -51,7 +53,10 @@ namespace WindowsLogin
 
                 if (DT.Rows[0][0].ToString() == "1")
                 {
+                    MainPage mainPage = new MainPage();
+                    mainPage.Show();
                     this.Hide();
+
                 }
                 else
                 {
@@ -64,7 +69,12 @@ namespace WindowsLogin
 
         private void UsernameTextBox1_TextChanged(object sender, EventArgs e)
         {
-            EmailExistsLabel7.Visible = false;
+        }
+
+        private void PasswordTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            //posibility to HASH the password
+
         }
     }
 }

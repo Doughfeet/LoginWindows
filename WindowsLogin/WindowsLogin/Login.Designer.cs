@@ -101,6 +101,7 @@
             this.PasswordTextBox2.Name = "PasswordTextBox2";
             this.PasswordTextBox2.Size = new System.Drawing.Size(457, 37);
             this.PasswordTextBox2.TabIndex = 1;
+            this.PasswordTextBox2.TextChanged += new System.EventHandler(this.PasswordTextBox2_TextChanged);
             // 
             // label4
             // 
