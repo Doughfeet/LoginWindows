@@ -228,7 +228,7 @@
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1435, 12);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(73, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(80, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
@@ -283,7 +283,7 @@
             this.RegisterLabel11.AutoSize = true;
             this.RegisterLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterLabel11.ForeColor = System.Drawing.Color.DarkOrange;
-            this.RegisterLabel11.Location = new System.Drawing.Point(1245, 805);
+            this.RegisterLabel11.Location = new System.Drawing.Point(1234, 805);
             this.RegisterLabel11.Name = "RegisterLabel11";
             this.RegisterLabel11.Size = new System.Drawing.Size(123, 37);
             this.RegisterLabel11.TabIndex = 1;
@@ -293,9 +293,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1374, 785);
+            this.pictureBox2.Location = new System.Drawing.Point(1374, 779);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 71);
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;

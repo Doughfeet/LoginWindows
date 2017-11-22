@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UsernameTextBox1 = new System.Windows.Forms.TextBox();
+            this.PasswordTextBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -81,34 +81,35 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "password";
             // 
-            // textBox1
+            // UsernameTextBox1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBox1.Location = new System.Drawing.Point(516, 253);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(457, 37);
-            this.textBox1.TabIndex = 1;
+            this.UsernameTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UsernameTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTextBox1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.UsernameTextBox1.Location = new System.Drawing.Point(516, 253);
+            this.UsernameTextBox1.Name = "UsernameTextBox1";
+            this.UsernameTextBox1.Size = new System.Drawing.Size(457, 37);
+            this.UsernameTextBox1.TabIndex = 1;
+            this.UsernameTextBox1.TextChanged += new System.EventHandler(this.UsernameTextBox1_TextChanged);
             // 
-            // textBox2
+            // PasswordTextBox2
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBox2.Location = new System.Drawing.Point(516, 368);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(457, 37);
-            this.textBox2.TabIndex = 1;
+            this.PasswordTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTextBox2.ForeColor = System.Drawing.Color.DarkOrange;
+            this.PasswordTextBox2.Location = new System.Drawing.Point(516, 368);
+            this.PasswordTextBox2.Name = "PasswordTextBox2";
+            this.PasswordTextBox2.Size = new System.Drawing.Size(457, 37);
+            this.PasswordTextBox2.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(792, 455);
+            this.label4.Location = new System.Drawing.Point(860, 457);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 29);
+            this.label4.Size = new System.Drawing.Size(110, 37);
             this.label4.TabIndex = 0;
             this.label4.Text = "sign in";
             // 
@@ -125,12 +126,13 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(881, 433);
+            this.pictureBox2.Location = new System.Drawing.Point(976, 433);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(92, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -171,7 +173,7 @@
             // 
             this.RegisterLabel7.AutoSize = true;
             this.RegisterLabel7.ForeColor = System.Drawing.Color.DarkOrange;
-            this.RegisterLabel7.Location = new System.Drawing.Point(667, 570);
+            this.RegisterLabel7.Location = new System.Drawing.Point(923, 574);
             this.RegisterLabel7.Name = "RegisterLabel7";
             this.RegisterLabel7.Size = new System.Drawing.Size(133, 25);
             this.RegisterLabel7.TabIndex = 6;
@@ -201,8 +203,8 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PasswordTextBox2);
+            this.Controls.Add(this.UsernameTextBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -226,8 +228,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UsernameTextBox1;
+        private System.Windows.Forms.TextBox PasswordTextBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
